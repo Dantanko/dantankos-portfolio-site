@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Builder & Systems Thinker | Portfolio</title>
+    <meta name="description" content="Portfolio of a Civil Engineering student and builder of AI, software, and fintech systems.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                    colors: {
+                        slate: {
+                            850: '#151e2e',
+                            900: '#0f172a',
+                            950: '#020617',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #38bdf8, #818cf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-300 font-sans antialiased selection:bg-sky-500/30 selection:text-sky-200">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-slate-950/80 backdrop-blur-md border-b border-slate-800 z-50">
+        <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold text-slate-100 tracking-tight">Builder.</a>
+            <div class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#about" class="hover:text-sky-400 transition-colors">Origins</a>
+                <a href="#projects" class="hover:text-sky-400 transition-colors">Projects</a>
+                <a href="#philosophy" class="hover:text-sky-400 transition-colors">Philosophy</a>
+                <a href="#contact" class="hover:text-sky-400 transition-colors">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="pt-32 pb-20 px-6 max-w-5xl mx-auto">
+        <div class="fade-in">
+            <p class="font-mono text-sky-400 mb-4">Hello, I am a builder and systems thinker.</p>
+            <h1 class="text-4xl md:text-6xl font-bold text-slate-100 leading-tight mb-6">
+                I find opportunities, understand what people want, and <span class="gradient-text">create systems that deliver value.</span>
+            </h1>
+            <p class="text-lg md:text-xl text-slate-400 max-w-3xl leading-relaxed mb-8">
+                I am a Civil Engineering student at Usmanu Danfodiyo University, Sokoto, but my path has always been driven by a single question: 
+                <span class="text-slate-200 italic">"How can I build a way through a problem?"</span>
+            </p>
+            <div class="flex flex-wrap gap-4">
+                <a href="#projects" class="px-6 py-3 bg-sky-600 hover:bg-sky-500 text-white font-medium rounded-lg transition-colors">View My Work</a>
+                <a href="#about" class="px-6 py-3 border border-slate-700 hover:border-slate-500 text-slate-300 font-medium rounded-lg transition-colors">Read My Story</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Origins Section -->
+    <section id="about" class="py-20 px-6 bg-slate-900/50 border-y border-slate-800">
+        <div class="max-w-5xl mx-auto">
+            <div class="fade-in mb-12">
+                <h2 class="text-3xl font-bold text-slate-100 mb-4">The Origins of a Builder</h2>
+                <p class="text-slate-400 max-w-3xl">Long before university, I learned business not from textbooks, but through direct experience. I didn't know the terminology, but I was learning the concepts.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Comic Books -->
+                <div class="fade-in p-6 rounded-xl bg-slate-850 border border-slate-800 hover:border-sky-500/30 transition-colors">
+                    <div class="text-sky-400 font-mono text-sm mb-3">Age 9</div>
+                    <h3 class="text-xl font-semibold text-slate-100 mb-3">Selling Comic Books at School</h3>
+                    <p class="text-slate-400 mb-4">I obtained free comic books and sold them to students. I quickly noticed that scarce volumes commanded higher prices (₦30 to ₦100).</p>
+                    <div class="border-l-2 border-sky-500 pl-4">
+                        <p class="text-slate-300 italic text-sm">"I could take an opportunity that already existed, add distribution, and create value from it."</p>
+                    </div>
+                </div>
+
+                <!-- Drinks -->
+                <div class="fade-in p-6 rounded-xl bg-slate-850 border border-slate-800 hover:border-sky-500/30 transition-colors">
+                    <div class="text-sky-400 font-mono text-sm mb-3">Early Teens</div>
+                    <h3 class="text-xl font-semibold text-slate-100 mb-3">Building a Distribution System</h3>
+                    <p class="text-slate-400 mb-4">I started selling a cold drink at school. As demand grew, I recruited other students, offering them one free drink for every four sold.</p>
+                    <div class="border-l-2 border-sky-500 pl-4">
+                        <p class="text-slate-300 italic text-sm">"I was moving from being a salesperson to managing a small distribution system: source → prepare → recruit → distribute → sell → reinvest."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 px-6 max-w-5xl mx-auto">
+        <div class="fade-in mb-12">
+            <h2 class="text-3xl font-bold text-slate-100 mb-4">What I Have Built</h2>
+            <p class="text-slate-400 max-w-3xl">From fintech infrastructure to AI search optimization, my projects are different, but the underlying pattern remains consistent.</p>
+        </div>
+
+        <div class="space-y-12">
+            <!-- Dala Forge -->
+            <div class="fade-in group">
+                <div class="flex flex-col md:flex-row md:items-start gap-6">
+                    <div class="md:w-1/4">
+                        <span class="inline-block px-3 py-1 text-xs font-mono font-medium bg-sky-500/10 text-sky-400 rounded-full mb-2">Current</span>
+                        <h3 class="text-2xl font-bold text-slate-100 group-hover:text-sky-400 transition-colors">Dala Forge</h3>
+                        <p class="text-sm text-slate-500 mt-1">AI / Search / Business Intelligence</p>
+                    </div>
+                    <div class="md:w-3/4 space-y-4">
+                        <p class="text-slate-300">Dala Forge grew out of a problem I encountered repeatedly: <strong class="text-slate-100">AI systems often do not understand businesses and their products deeply enough to guide customers correctly.</strong></p>
+                        <p class="text-slate-400">I build solutions across two layers: <strong class="text-slate-200">AI Discovery</strong> (ensuring AI systems can find and recommend a company) and <strong class="text-slate-200">AI Product Understanding</strong> (ensuring the AI can accurately explain the product and its local constraints).</p>
+                        <ul class="list-disc list-inside text-slate-400 space-y-1 ml-2">
+                            <li>Built my first real website from scratch using AI as a development tool.</li>
+                            <li>Developed the <strong>Abuja AI Visibility Index</strong>, a research project systematically testing why AI mentions certain real estate companies over others.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-slate-800"></div>
+
+            <!-- CodeLens -->
+            <div class="fade-in group">
+                <div class="flex flex-col md:flex-row md:items-start gap-6">
+                    <div class="md:w-1/4">
+                        <span class="inline-block px-3 py-1 text-xs font-mono font-medium bg-purple-500/10 text-purple-400 rounded-full mb-2">In Development</span>
+                        <h3 class="text-2xl font-bold text-slate-100 group-hover:text-purple-400 transition-colors">CodeLens</h3>
+                        <p class="text-sm text-slate-500 mt-1">AI / Software Development Environment</p>
+                    </div>
+                    <div class="md:w-3/4 space-y-4">
+                        <p class="text-slate-300">Current AI coding tools assume users understand code. CodeLens explores a different possibility: <strong class="text-slate-100">What if people could interact with software in Plain English while maintaining precise control over the underlying source code?</strong></p>
+                        <p class="text-slate-400">Built with Python and a web interface, it translates natural-language instructions into explicit source-code changes.</p>
+                        <div class="bg-slate-900 p-4 rounded-lg border border-slate-800 font-mono text-sm text-slate-300">
+                            <span class="text-slate-500"># AI proposes changes. CodeLens controls them. Humans approve.</span><br>
+                            <span class="text-purple-400">tax</span> = <span class="text-slate-300">subtotal</span> * <span class="text-orange-400">0.15</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-slate-800"></div>
+
+            <!-- Naira Bridge -->
+            <div class="fade-in group">
+                <div class="flex flex-col md:flex-row md:items-start gap-6">
+                    <div class="md:w-1/4">
+                        <span class="inline-block px-3 py-1 text-xs font-mono font-medium bg-slate-700 text-slate-300 rounded-full mb-2">2021 – 2025</span>
+                        <h3 class="text-2xl font-bold text-slate-100 group-hover:text-slate-300 transition-colors">Naira Bridge</h3>
+                        <p class="text-sm text-slate-500 mt-1">Blockchain / Fintech Infrastructure</p>
+                    </div>
+                    <div class="md:w-3/4 space-y-4">
+                        <p class="text-slate-300">My first serious attempt at building a technology company. The goal was to create a regulated infrastructure layer between cryptocurrency platforms and Nigeria's financial system, potentially utilizing the eNaira ecosystem.</p>
+                        <p class="text-slate-400">Without funding, a technical co-founder, or coding skills, I recruited a small remote team (frontend, backend, blockchain) on an equity basis and navigated complex regulatory conversations with individuals familiar with the CBN.</p>
+                        <div class="border-l-2 border-slate-600 pl-4">
+                            <p class="text-slate-400 italic text-sm">"The project taught me that an idea can be technically interesting and address a real problem, while the surrounding regulatory and infrastructure environment still makes it impractical."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Philosophy & Engineering Section -->
+    <section id="philosophy" class="py-20 px-6 bg-slate-900/50 border-y border-slate-800">
+        <div class="max-w-5xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="fade-in">
+                    <h2 class="text-3xl font-bold text-slate-100 mb-6">The Engineering Mindset</h2>
+                    <p class="text-slate-400 mb-4">My formal education is in Civil Engineering at Usmanu Danfodiyo University, Sokoto, including industrial training with the Federal Capital Development Authority.</p>
+                    <p class="text-slate-400 mb-4">Engineering teaches me to think in terms of <strong class="text-slate-200">systems, constraints, dependencies, failure modes, and practical implementation.</strong></p>
+                    <p class="text-slate-400">I do not see engineering, software, and entrepreneurship as separate paths. They all require understanding how systems work and what happens when those systems meet real-world constraints.</p>
+                </div>
+                <div class="fade-in">
+                    <h2 class="text-3xl font-bold text-slate-100 mb-6">The Pattern</h2>
+                    <p class="text-slate-400 mb-6">Across all my projects, the thing I value most is not that every idea succeeded. It is that I keep moving through a deliberate loop:</p>
+                    <div class="space-y-3 font-mono text-sm">
+                        <div class="flex items-center gap-3">
+                            <span class="w-6 h-6 rounded-full bg-sky-500/20 text-sky-400 flex items-center justify-center text-xs">1</span>
+                            <span class="text-slate-300">Idea & Investigation</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span class="w-6 h-6 rounded-full bg-sky-500/20 text-sky-400 flex items-center justify-center text-xs">2</span>
+                            <span class="text-slate-300">Gathering People & Resources</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span class="w-6 h-6 rounded-full bg-sky-500/20 text-sky-400 flex items-center justify-center text-xs">3</span>
+                            <span class="text-slate-300">Prototype & Evidence</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span class="w-6 h-6 rounded-full bg-sky-500/20 text-sky-400 flex items-center justify-center text-xs">4</span>
+                            <span class="text-slate-300">Iteration</span>
+                        </div>
+                    </div>
+                    <p class="text-slate-400 mt-6 italic">"I have spent years developing the willingness to pursue an idea far enough to discover what is actually standing in its way."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-6 max-w-5xl mx-auto text-center">
+        <div class="fade-in">
+            <h2 class="text-3xl font-bold text-slate-100 mb-4">Let's Build Something</h2>
+            <p class="text-slate-400 max-w-2xl mx-auto mb-8">I am always interested in discussing difficult systems, AI infrastructure, and opportunities to build things that make those systems work better.</p>
+            <a href="mailto:your.email@example.com" class="inline-flex items-center gap-2 px-8 py-4 bg-slate-100 text-slate-900 font-semibold rounded-lg hover:bg-white transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                Get in Touch
+            </a>
+            <div class="mt-12 flex justify-center gap-6 text-slate-500">
+                <!-- Replace # with your actual links -->
+                <a href="#" class="hover:text-sky-400 transition-colors">GitHub</a>
+                <a href="#" class="hover:text-sky-400 transition-colors">LinkedIn</a>
+                <a href="#" class="hover:text-sky-400 transition-colors">Twitter / X</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 px-6 border-t border-slate-800 text-center text-slate-600 text-sm">
+        <p>&copy; 2026. Built with intention, iteration, and a little help from AI.</p>
+    </footer>
+
+    <!-- Simple Scroll Animation Script -->
+    <script>
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach((el) => observer.observe(el));
+    </script>
+</body>
+</html>
